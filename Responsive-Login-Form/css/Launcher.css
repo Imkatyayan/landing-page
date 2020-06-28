@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+	overflow-y: hidden;
+}
+
+
+.blob-Intro{
+   margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #212121;
+}
+.blob{
+    width: 400px;
+    height: 400px;
+    background: #38d39f;
+    animation: animateblob 5s linear infinite;
+}
+@keyframes animateblob{
+    0%,100%{
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25%{
+        border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+    50%{
+        border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+    }
+    75%{
+        border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+    }
+}
+.blob-Intro .blob h1{
+    position: absolute;
+    font-size: 7em;
+    color: white;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+@media (max-width: 991px)
+{
+    .blob-Intro .blob h1{
+        font-size: auto;
+        padding: auto;
+    }
+}
+.buttons{
+	padding: 100px;
+	margin: 0;
+	background: #212121;
+	width: auto;
+	height: auto;
+}
+.btn{
+  font-family: 'Airal';
+  border-radius:200px;
+  border:none;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:bold;
+  padding : 15px 30px;
+  font-weight : 300;
+  color:white;
+text-decoration: none;
+margin: 100px;
+transition: background-color 0.5s , color 0.5s;
+}
+.btn-reg{
+  margin-left: 200px;
+    background:  #38d39f;
+	border: 1px solid #38d39f;
+	outline: none;
+
+}
+.btn-log{
+  margin-left: 300px;
+  border:1px solid white;
+	outline: none;
+}
+.btn-log:hover{
+background-color: #38d39f;
+border: none;
+border:1px solid #38d39f;
+	outline: none;
+
+}
+.btn-reg:hover{
+background-color: transparent;
+border: none;
+border:1px solid #fff;
+	outline: none;
+
+}
+
+@media (max-width : 990px)
+{
+	.buttons .btn .btn-log .btn-reg{
+		font-size: auto;
+		padding: 0;
+		margin: 0;
+	}
+}
